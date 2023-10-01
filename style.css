@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(245, 245, 220, 0.575);
+    height: 200vh;
+}
+.container {
+    position: relative;
+}
+.add-car {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    width: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s;
+}
+.filter-car {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    width: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s;
+}
+.filter-car__text {
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 14px;
+}
+.add-car__text {
+    display: inline-block;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+.add-car:hover {
+    width: 150px;
+}
+.filter-car:hover {
+    width: 200px;
+}
+.add-car.bottom-right {
+    top: 90%;
+    left: 85%;
+}
+.add-car-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    background-color: gainsboro;
+    display: none;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.input-group select {
+    padding: 5px;
+    margin: 10px 20px;
+}
+.price-tag {
+    margin: 10px 20px;
+    width: 30%;
+    padding: 5px;
+}
+.engine-capacity {
+    margin: 10px 20px;
+    width: 40%;
+    padding: 5px;
+}
+.image-input {
+    margin: 20px auto;
+    width: 88%;
+    padding: 5px 10px;
+}
+.input-group .btn-group {
+    margin: 70px 20px;
+}
+.input-group .btn-group button {
+    padding: 10px;
+    margin: 0 5px;
+}
+main {
+    margin: 150px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 636px;
+    height: 174px;
+    margin-bottom: 20px;
+}
+.card .card-img img {
+    width: 200px;
+    height: 150px;
+}
+.head {
+    display: flex;
+}
+.head h3 {
+    margin-left: 10px;
+    color: #272a37;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head p {
+    color: #8996ae;
+    margin-left: 8px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-info {
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.main-info span{
+    margin: 10px 30px;
+    font-size: 13px;
+    color: #272a37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #272a37;
+}
+.filter {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    border: 2px solid black;
+    margin: 20px auto;
+    text-align: center;
+    background-color: gainsboro;
+    display: none;
+}
+.filter select {
+    padding: 5px;
+    margin: 10px 5px;
+}
+.garbeni {
+    margin: 10px 20px;
+    width: 30%;
+    padding: 5px;
+}
+.wheel {
+    margin: 10px 20px;
+    width: 40%;
+    padding: 5px;
+}

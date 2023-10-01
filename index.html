@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e6b173180.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ITSTEP PROJECT</title>
+</head>
+<body>
+    <div class="container">
+        <span class="add-car" id="addCarIcon"><i class="fa-solid fa-plus"></i><p class="add-car__text">Add new car</p></span>
+        <span class="filter-car" id="filterIcon"><i class="fa-solid fa-filter"><p class="filter-car__text">Filter cars</p></i></span>
+        <div class="add-car-modal" id="addCarModal">
+            <form class="input-group" id="addCarForm">
+                <select name="manufacturer" id="manufacturer" required>
+                    <option value="manufacturer">მწარმოებელი</option>
+                </select>
+                <select name="model" id="model" disabled required>
+                    <option value="model">მოდელი</option>
+                </select>
+                <select name="category" id="category" disabled required>
+                    <option value="category">კატეგორია</option>
+                </select>
+                <select name="year" id="year" disabled required>
+                    <option value="year">გამოშვების წელი</option>
+                </select>
+
+                <input type="number" id="price" class="price-tag" min="0.01" step="0.01" placeholder="ფასი" required>
+                <input type="number" id="engineCapacity" class="engine-capacity" min="0.1" step="0.1" placeholder="ძრავის მოცულობა" required>
+
+                <input type="number" id="garbeni" class="garbeni" min="0.01" step="0.01" placeholder="გარბენი" required>
+                <!-- <input type="number" id="engineCapacity" class="wheel" min="0.1" step="0.1" placeholder="ძრავის მოცულობა" required> -->
+                <select name="wheelSide" id="wheel" class="wheel" required>
+                    <option value="მარჯვენა">მარჯვენა</option>
+                    <option value="მარცხენა">მარცხენა</option>
+                </select>
+
+                <input type="file" class="image-input" id="image" placeholder="სურათი" accept="image/jpeg, image/png, image/jpg" required>
+
+                <div class="btn-group">
+                    <button type="submit">მანქანის დამატება</button>
+                    <button type="button" id="cancel">გაუქმება</button>
+                </div>
+            </form>
+        </div>
+        <div class="filter">
+            <select name="manufacturer" id="manufacturerFilter" required>
+                <option value="manufacturer">მწარმოებელი</option>
+            </select>
+            <select name="model" id="modelFilter" disabled required>
+                <option value="model">მოდელი</option>
+            </select>
+            <select name="category" id="categoryFilter" required>
+                <option value="category">კატეგორია</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Coupe">Coupe</option>
+            </select>
+            <select name="year" id="yearFilter" required>
+                <option value="year">გამოშვების წელი</option>
+            </select>
+            <input type="number" name="priceFrom" id="priceFrom" class="price-tag" placeholder="დან" min="1">
+            <input type="number" name="priceTo" id="priceTo" class="price-tag" placeholder="მდე" min="1">
+
+            <button id="cancelFilterModal">გაუქმება</button>
+        </div> 
+        <main id="mainBar"></main>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
